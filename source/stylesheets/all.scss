@@ -18,6 +18,7 @@ p {
   height: 100vh;
 
   background: {
+    color: black;
     image: url('/images/hero.jpg');
     size: cover;
     position: 0% 100%;
@@ -49,7 +50,6 @@ p {
   }
 
   img.me { 
-    //visibility: hidden;
     width: 140px;
     border-radius: 50%;
   }
@@ -69,6 +69,10 @@ p {
       height: 40px;
       text-indent: -100%;
       opacity: 0.7;
+      transition: {
+        property: opacity;
+        duration: 0.4s;
+      }
 
       &:hover {
         opacity: 1;
