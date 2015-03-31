@@ -2,4 +2,30 @@
 title: Ben Lenarts
 ---
 
-%h1 Hello!
+- email = 'hello@benlenarts.com'
+- twitter_url = 'http://twitter.com/benlenarts'
+- instagram_url = 'http://instagram.com/benlenarts'
+
+.header
+  %img.me{src:'/images/headshot.jpg'}
+  :markdown 
+    Hey there, I'm Ben Lenarts. 
+    I create bootstrapped software products that are simple and save people time and agony, 
+    such as [Beamer](http://beamer-app.com) and [Captio](http://captio.co).
+    I travel and work wherever I'm at.
+  %p  
+    = succeed ',' do
+      %a{href:twitter_url} Follow me on Twitter
+    %a{href:"mailto:#{email}"} send me an email 
+    or 
+    = succeed '.' do
+      %a{href:instagram_url} see where I have been hanging out
+  %ul.social
+    %li
+      %a.twitter{href:twitter_url} Twitter
+    %li
+      %a.github{href:'http://github.com/benlenarts'} Github
+    %li
+      %a.email{href:"mailto:#{email}"} Email
+    %li
+      %a.instagram{href:instagram_url} Instagram
