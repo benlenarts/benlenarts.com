@@ -15,18 +15,18 @@ title: Ben Lenarts
       such as [Beamer](http://beamer-app.com) and [Captio](http://captio.co).
       I travel and work wherever I'm at.
     %p  
-      = succeed ',' do
-        %a{href:twitter_url} Follow me on Twitter
-      %a{href:"mailto:#{email}"} send me an email 
-      or 
+      %a{href:twitter_url} Follow me
+      on Twitter,
+      %a{href:"mailto:#{email}"} send me a note 
+      or check out
       = succeed '.' do
-        %a{href:instagram_url} see where I have been hanging out
+        %a{href:instagram_url} some photos I made
     %ul.social
       %li
         %a.twitter{href:twitter_url} Twitter
       %li
-        %a.github{href:'http://github.com/benlenarts'} Github
-      %li
         %a.email{href:"mailto:#{email}"} Email
       %li
         %a.instagram{href:instagram_url} Instagram
+      %li
+        %a.github{href:'http://github.com/benlenarts'} Github
