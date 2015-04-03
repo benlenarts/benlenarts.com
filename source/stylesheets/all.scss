@@ -1,8 +1,11 @@
+@import url(http://fonts.googleapis.com/css?family=Nunito:300,400);
+
 body {
   margin: 0;
   font: {
-    family: Avenir, Helvetica, Arial;
+    family: Avenir, Nunito, Helvetica, Arial, sans-serif;
     size: 16px;
+    weight: 300;
   }
   line-height: 1.5;
 }
