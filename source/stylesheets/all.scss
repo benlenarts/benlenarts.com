@@ -52,7 +52,7 @@ p {
     font-weight: 600;
     text-decoration: none;
 
-    &:hover {
+    &:hover, &:active {
       text-decoration: underline;
     }
   }
@@ -88,7 +88,7 @@ p {
         duration: 0.4s;
       }
 
-      &:hover {
+      &:hover, &:active {
         opacity: 1;
       }
       
