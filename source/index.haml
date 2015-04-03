@@ -30,3 +30,9 @@ title: Ben Lenarts
         %a.instagram{href:instagram_url} Instagram
       %li
         %a.github{href:'http://github.com/benlenarts'} Github
+
+:javascript
+  document.body.onload = function() {
+    var classes = document.body.getAttribute('class');
+    document.body.setAttribute('class', classes+' loaded');
+  }

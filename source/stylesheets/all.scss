@@ -107,3 +107,29 @@ p {
     }
   }
 }
+
+// appearance animation
+body .content {
+  transition: all 1.6s ease-out 0.2s;
+
+  .social li {
+    transition: opacity 0.8s ease-out;
+    
+    &:nth-of-type(1) { transition-delay: 1.6s; }
+    &:nth-of-type(2) { transition-delay: 1.8s; }
+    &:nth-of-type(3) { transition-delay: 2.0s; }
+    &:nth-of-type(4) { transition-delay: 2.2s; }
+  }
+}
+
+body:not(.loaded) .content {
+  transform: translateY(10px);
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  opacity: 0;
+
+  .social li {
+    opacity: 0;
+  }
+}
+
