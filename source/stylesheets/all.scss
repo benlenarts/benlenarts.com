@@ -111,7 +111,9 @@ p {
 
 // appearance animation
 body .content {
-  transition: all 1.2s ease-out 0.2s;
+  transition: transform 1.2s ease-out 0.2s, opacity 1.2s ease-out 0.2s;
+  -webkit-transition: -webkit-transform 1.2s ease-out 0.2s, opacity 1.2s ease-out 0.2s;
+  -moz-transition: -moz-transform 1.2s ease-out 0.2s, opacity 1.2s ease-out 0.2s;
 
   .social li {
     transition: opacity 0.8s ease-out;
